@@ -22,7 +22,7 @@ function build_path_bezier3(A, dt = 0.05) = [
 ];
 
 module follow_path(path) {
-    for(i = [0:len(path) - 2]) {
+    for(i = [0:len(path) - 4]) {
         p = [ path[i], path[i + 1], path[i + 2] ];
         v1 = p[1] - p[0];
         v2 = p[2] - p[1];
